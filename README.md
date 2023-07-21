@@ -26,7 +26,8 @@ Notes:
 
 User story will be provided to you during the mid mod.
 
-```As a user,
+```
+As a user,
 When I visit "/"
 And I fill in the search form with "sweet potatoes"
 (Note: Use the existing search form)
@@ -40,4 +41,5 @@ And for each of the foods I should see:
 - The food's GTIN/UPC code
 - The food's description
 - The food's Brand Owner
-- The food's ingredients```
+- The food's ingredients
+```
