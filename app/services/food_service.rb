@@ -1,6 +1,10 @@
 class FoodService
   def search_food(food)
-    get_url("search?query=#{food}")
+    response = get_url("search?query=#{food}")
+    {
+      foods: response[:foods],
+      totalHits: response[:totalHits]
+    }
   end
 
   def get_url(url)
