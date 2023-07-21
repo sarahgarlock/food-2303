@@ -1,0 +1,13 @@
+<h1>Index page for "<%= @search_query %>"</h1>
+<p><strong>Total items found: </strong><%= @total_hits %></p>
+<hr>
+<ol>
+  <% @foods.each do |f| %>
+  <li></li>
+    <p><strong>gtinUpc Code: </strong><%= f.code %></p>
+    <p><strong>Description: </strong><%= f.description %></p>
+    <p><strong>Brand Owner: </strong><%= f.brandOwner %></p>
+    <p><strong>Ingredients: </strong><%= f.ingredients %></p>
+    <hr>
+  <% end %>
+</ol>
